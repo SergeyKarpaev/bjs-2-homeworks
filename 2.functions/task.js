@@ -29,12 +29,9 @@ function differenceMaxMinWorker(...arr) {
 	if (arr.length === 0) {
 		return 0;
 	}
-	for (let i = 0; i < arr.length; i++) {
 		let max = Math.max(...arr);
 		let min = Math.min(...arr);
-		let difference = max - min;
-		return difference;
-	}
+		return max - min;
 }
 console.log(differenceMaxMinWorker()); // 0
 console.log(differenceMaxMinWorker(10, 10, 11, 20, 10)); // 20 - 10 => 10
